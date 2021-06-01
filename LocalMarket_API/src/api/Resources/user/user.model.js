@@ -21,6 +21,14 @@ const userSchema = new Schema({
     password:{
         type:String,
         required:true
+    },
+    DOB:{
+        type:String,
+        required:true
+    },
+    Address:{
+        type:String,
+        required:true
     }
 }, {collection: 'User'});
 export default new mongoose.model('User', userSchema);

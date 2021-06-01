@@ -7,7 +7,9 @@ export default{
             lastName: joi.string().required(), 
             email: joi.string().required(), 
             role: joi.string().required(), 
-            password: joi.string().required()
+            password: joi.string().required(),
+            DOB:joi.date().required(),
+            Address:joi.string().required()
         })
     
         const {error, value} = schema.validate(body);
